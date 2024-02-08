@@ -1,11 +1,11 @@
 import { useEffect } from "react";
+// import { API } from "../global";
 
 function LoginSuccess({user,setUser}) {
 
 useEffect(() => {
       const getUser = () => {
-        
-        fetch("http://localhost:5000/auth/login/success", {
+        fetch(`https://multi-oauth.onrender.com/auth/login/success`, {
           method: "GET",
           credentials: "include",
           headers: {

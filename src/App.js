@@ -4,9 +4,8 @@ import Home from "./pages/Home";
 // import Post from "./pages/Post";
 import Login from "./pages/Login";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import LoginSuccess from "./components/LoginSuccess";
-import Profile from "./pages/Profile";
 import LoginFailure from "./components/LoginFailure";
 
 const App = () => {
@@ -33,7 +32,6 @@ const App = () => {
             path="/login/failed"
             element={<LoginFailure user={user} setUser={setUser} />}
           />
-          <Route exact path="/profile" component={Profile} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -2,21 +2,22 @@ import Google from "../img/google.png";
 import Facebook from "../img/facebook.png";
 import Github from "../img/github.png";
 import { useEffect } from "react";
+// import { API } from "../global";
 
 
 
 const Login = ({setUser}) => {
   useEffect(()=>setUser(null),[])
   const google = () => {
-    window.open("http://localhost:5000/auth/google", "_self");
+    window.open(`https://multi-oauth.onrender.com/auth/google`, "_self");
   };
 
   const github = () => {
-    window.open("http://localhost:5000/auth/github", "_self");
+    window.open(`https://multi-oauth.onrender.com/auth/github`, "_self");
   };
 
   const facebook = () => {
-    window.open("http://localhost:5000/auth/facebook", "_self");
+    window.open(`https://multi-oauth.onrender.com/auth/facebook`, "_self");
   };
 
   return (

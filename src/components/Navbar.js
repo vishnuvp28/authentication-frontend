@@ -1,11 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { API } from "../global";
 const Navbar = ({ user ,setUser}) => {
   const navigate=useNavigate();
   console.log(user);
   const logout = () => {
     console.log(user);
-    axios.post("http://localhost:5000/delete/user", user);
+    axios.post(`https://multi-oauth.onrender.com/delete/user`, user);
 
     // window.open("http://localhost:5000/auth/logout", "_self");
 setUser(null);
@@ -33,13 +34,7 @@ setUser(null);
       )}
 
 
-
-      {/* <Link className="link" to="/login">
-         login 
-        </Link>
-        <Link className="link" to="/">
-         logout
-        </Link> */}
+     
     </div>
   );
 };
