@@ -31,7 +31,7 @@ setUser(null);
           </li>
         </ul>
       ) : (
-        <Link className="link" to="/login">
+        <Link  to="/login">
           Login
         </Link>
       )}

@@ -6,7 +6,8 @@ import { useEffect } from "react";
 
 
 
-const Login = ({setUser}) => {
+const Login = ({user,setUser}) => {
+  console.log("log in",user);
   useEffect(()=>setUser(null),[])
   const google = () => {
     // window.open(`https://multi-oauth.onrender.com/auth/google`, "_self");

@@ -10,7 +10,7 @@ import LoginFailure from "./components/LoginFailure";
 
 const App = () => {
   const [user, setUser] = useState(null);
-
+console.log("app",user);
 
   return (
     <BrowserRouter>
@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/" element={<Home user={user} setUser={setUser} />} />
           <Route
             path="/login"
-            element={user ? <Navigate to="/" /> : <Login  setUser={setUser} />}
+            element={<Login  user={user} setUser={setUser} />}
           />
           <Route
             exact
