@@ -4,8 +4,8 @@ import { useEffect } from "react";
 function LoginSuccess({user,setUser}) {
 console.log("login success :", user)
 useEffect(() => {
-      const getUser = () => {
-        fetch(`https://multi-oauth.onrender.com/auth/login/success`, {
+      const getUser = async() => {
+        await fetch(`https://multi-oauth.onrender.com/auth/login/success`, {
           // fetch(`http://localhost:5000/auth/login/success`, {
           method: "GET",
           credentials: "include",

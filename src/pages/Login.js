@@ -10,8 +10,8 @@ const Login = ({user,setUser}) => {
   console.log("log in",user);
   useEffect(()=>setUser(null),[])
   const google = () => {
-    // window.open(`https://multi-oauth.onrender.com/auth/google`, "_self");
-    window.open(`http://localhost:5000/auth/google`, "_self");
+    window.open(`https://multi-oauth.onrender.com/auth/google`, "_self");
+    // window.open(`http://localhost:5000/auth/google`, "_self");
 
   };
 
@@ -21,8 +21,8 @@ const Login = ({user,setUser}) => {
   };
 
   const facebook = () => {
-    // window.open(`https://multi-oauth.onrender.com/auth/facebook`, "_self");
-    window.open(`http://localhost:5000/auth/facebook`, "_self");
+    window.open(`https://multi-oauth.onrender.com/auth/facebook`, "_self");
+    // window.open(`http://localhost:5000/auth/facebook`, "_self");
   };
 
   return (
