@@ -25,19 +25,17 @@ setUser(null);
           Mutli Oauth
         </Link>
       </span>
-      {/* {user ? (
-        <ul className="list">
-          <li className="listItem"></li>
-          <li className="listItem">{user.displayName}</li>
-          <li className="listItem" onClick={logout}>
+      {user ? (
+       
+          <button className="listItem" onClick={logout}>
             Logout
-          </li>
-        </ul>
-      ) : ( */}
+          </button>
+        
+      ) : (
         <Link  to="/login">
           Login
         </Link>
-      {/* )} */}
+       )} 
 
 
      
