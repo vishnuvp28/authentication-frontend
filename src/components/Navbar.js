@@ -6,23 +6,26 @@ const Navbar = ({ user ,setUser}) => {
   console.log(user);
 
 
-  const logout = () => {
+  const  logout = async() => {
     console.log(user);
     // axios.post(`https://multi-oauth.onrender.com/delete/user`, user);
-    axios.post(`http://localhost:5000/delete/user`, user);
+   await axios.post(`http://localhost:5000/delete/user`, user);
     // window.open("http://localhost:5000/auth/logout", "_self");
 setUser(null);
     navigate("/");
   };
   console.log(user);
   return (
-    <div className="navbar">
-      <span className="logo">
-        <Link className="link" to="/">
+    // className="navbar"
+    // className="logo"
+    // className="link"
+    <div >
+      <span >
+        <Link  to="/">
           Mutli Oauth
         </Link>
       </span>
-      {user ? (
+      {/* {user ? (
         <ul className="list">
           <li className="listItem"></li>
           <li className="listItem">{user.displayName}</li>
@@ -30,11 +33,11 @@ setUser(null);
             Logout
           </li>
         </ul>
-      ) : (
+      ) : ( */}
         <Link  to="/login">
           Login
         </Link>
-      )}
+      {/* )} */}
 
 
      
