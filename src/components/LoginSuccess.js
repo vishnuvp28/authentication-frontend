@@ -32,6 +32,7 @@ useEffect(() => {
       .catch((err)=>console.log(err))
       }
       getUser();
+      
     }, []);
   
   
@@ -41,7 +42,6 @@ useEffect(() => {
         <h1>LoginSuccess</h1>
         </div>
     )
-
 }
 
 
