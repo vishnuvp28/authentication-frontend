@@ -14,12 +14,11 @@ useEffect(() => {
       
     }, []);
   
-  
   console.log(user)
     return(
         <div className="log">
         <h1>LoginSuccess</h1>
-        <img className="img" src="https://media.licdn.com/dms/image/D4D12AQFYV33YTvI6pQ/article-cover_image-shrink_720_1280/0/1687146564848?e=2147483647&v=beta&t=pLQUhX-bTVJ0eDUA7x338WqLuJOJ6wYXX3R04v5qu94" alt="img"/>
+        <img src="https://media.licdn.com/dms/image/D4D12AQFYV33YTvI6pQ/article-cover_image-shrink_720_1280/0/1687146564848?e=2147483647&v=beta&t=pLQUhX-bTVJ0eDUA7x338WqLuJOJ6wYXX3R04v5qu94" alt="img"/>
         </div>
     )
 }

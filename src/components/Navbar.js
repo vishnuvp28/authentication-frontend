@@ -16,9 +16,9 @@ setUser(null);
   console.log(user);
   return (
  
-    <div >
+    <div className="nav" >
       <span >
-        <Link className="link" to="/">
+        <Link className="link1" to="/">
           Mutli Oauth
         </Link>
       </span>
@@ -29,7 +29,7 @@ setUser(null);
           </button>
         
       ) : (
-        <Link className="link" to="/login">
+        <Link className="link2" to="/login">
           Login
         </Link>
        )} 

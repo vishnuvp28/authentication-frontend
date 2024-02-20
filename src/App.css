@@ -347,3 +347,23 @@ input{
     padding: 0.6rem 0 2rem 20rem;
   }
 }
+
+.nav{
+  display:flex;
+  background-color: #333;
+}
+
+.link1{
+  display :flex;
+  align-items: flex-start;
+  color:beige;
+  cursor: pointer;
+
+}
+.link2{
+  display :flex;
+  align-items: flex-end;
+  color:beige;
+  cursor: pointer;
+
+}
