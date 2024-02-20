@@ -9,19 +9,16 @@ const Navbar = ({ user ,setUser}) => {
   const  logout = async() => {
     console.log(user);
     await axios.post(`https://multi-oauth.onrender.com/delete/user`, user);
-  //  await axios.post(`http://localhost:5000/delete/user`, user);
-    // window.open("http://localhost:5000/auth/logout", "_self");
+ 
 setUser(null);
     navigate("/");
   };
   console.log(user);
   return (
-    // className="navbar"
-    // className="logo"
-    // className="link"
+ 
     <div >
       <span >
-        <Link  to="/">
+        <Link className="link" to="/">
           Mutli Oauth
         </Link>
       </span>
@@ -32,7 +29,7 @@ setUser(null);
           </button>
         
       ) : (
-        <Link  to="/login">
+        <Link className="link" to="/login">
           Login
         </Link>
        )} 

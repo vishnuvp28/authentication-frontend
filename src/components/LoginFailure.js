@@ -5,6 +5,7 @@ function LoginFailure() {
     <h1>
         404 Login failed
     </h1>
+    
   )
 }
 

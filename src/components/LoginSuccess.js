@@ -5,28 +5,7 @@ function LoginSuccess({user,setUser}) {
 console.log("login success :", user)
 useEffect(() => {
       const getUser = async() => {
-      //   await fetch(`https://multi-oauth.onrender.com/auth/login/success`, {
-      //     // fetch(`http://localhost:5000/auth/login/success`, {
-      //     method: "GET",
-      //     credentials: "include",
-      //     headers: { 
-      //       Accept: "application/json",
-      //       "Content-Type": "application/json",
-      //       "Access-Control-Allow-Credentials": true,
-      //     },
-      //   })
-      //     .then((response) => {
-      //       if (response.status === 200) return response.json();
-      //       throw new Error("authentication has been failed!");
-      //     })
-
-      //     .then((resObject) => {
-      //       setUser(resObject.user);
-      //     })
-      //     .catch((err) => {
-      //       console.log(err);
-      //     });
-      // };
+   
       await axios.get("https://multi-oauth.onrender.com/auth/login/success")
       .then((res)=>setUser(res.data.user))
       .catch((err)=>console.log(err))
@@ -40,6 +19,7 @@ useEffect(() => {
     return(
         <div className="log">
         <h1>LoginSuccess</h1>
+        <img className="img" src="https://media.licdn.com/dms/image/D4D12AQFYV33YTvI6pQ/article-cover_image-shrink_720_1280/0/1687146564848?e=2147483647&v=beta&t=pLQUhX-bTVJ0eDUA7x338WqLuJOJ6wYXX3R04v5qu94" alt="img"/>
         </div>
     )
 }
