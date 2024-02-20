@@ -348,6 +348,7 @@ input{
   }
 }
 
+@media screen and (max-width:306px){
 .nav{
   display:flex;
   background-color: #000000;
@@ -366,6 +367,29 @@ margin-right: 10px;
   align-items: flex-end;
   padding:10px;
   margin-left: 500px;
+  color:beige;
+  cursor: pointer;
+
+}
+}
+.nav{
+  display:flex;
+  background-color: #000000;
+}
+
+.link1{
+  display :flex;
+  align-items: flex-start;
+  color:beige;
+  cursor: pointer;
+  padding:10px;
+/* margin-right: 10px; */
+}
+.link2{
+  display :flex;
+  align-items: flex-end;
+  padding:10px;
+  /* margin-left: 1500px; */
   color:beige;
   cursor: pointer;
 
