@@ -352,6 +352,8 @@ input{
 .nav{
   display:flex;
   background-color: #000000;
+  align-items: flex-end;
+
 }
 
 .link1{

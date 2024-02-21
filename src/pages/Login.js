@@ -11,18 +11,15 @@ const Login = ({user,setUser}) => {
   useEffect(()=>setUser(null),[])
   const google = () => {
     window.open(`https://multi-oauth.onrender.com/auth/google`, "_self");
-    // window.open(`http://localhost:5000/auth/google`, "_self");
 
   };
 
   const github = () => {
     window.open(`https://multi-oauth.onrender.com/auth/github`, "_self");
-    // window.open(`http://localhost:5000/auth/github`, "_self");
   };
 
   const facebook = () => {
     window.open(`https://multi-oauth.onrender.com/auth/facebook`, "_self");
-    // window.open(`http://localhost:5000/auth/facebook`, "_self");
   };
 
   return (
