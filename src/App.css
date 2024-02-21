@@ -385,6 +385,7 @@ margin-right: 10px;
   color:beige;
   cursor: pointer;
   padding:10px;
+  text-decoration: none;
 /* margin-right: 10px; */
 }
 .link2{
@@ -394,5 +395,11 @@ margin-right: 10px;
   /* margin-left: 1500px; */
   color:beige;
   cursor: pointer;
+  text-decoration: none;
 
+}
+.loginsuccess{
+  width:108vh;
+  height:90vh;
+  
 }
