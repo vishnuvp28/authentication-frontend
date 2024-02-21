@@ -403,3 +403,8 @@ margin-right: 10px;
   height:90vh;
   
 }
+.h1{
+  display :flex;
+  align-items: center;
+  justify-content: center;
+}
